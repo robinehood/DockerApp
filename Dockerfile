@@ -4,7 +4,7 @@ MAINTAINER robine
 
 RUN yum update -y && yum install httpd -y
 
-EXPOSE 8080
+EXPOSE 80
 
 VOLUME ["/sys/fs/cgroup","/var/www/html"]
 
