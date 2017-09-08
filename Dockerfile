@@ -2,7 +2,9 @@ FROM centos
 
 MAINTAINER robine
 
-RUN yum update -y && yum install httpd -y
+RUN yum update -y && yum install httpd -y && yum install php -y
+
+ADD info.php /var/www/html
 
 EXPOSE 80
 
